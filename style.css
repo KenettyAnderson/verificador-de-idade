@@ -18,14 +18,18 @@ section {
     border-radius: 20px;
     padding: 10px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.493);
+    min-width: 283px;
+    min-height: 400px;
 }
 
 div#res {
     text-align: center;
+    padding: 5px;
 }
 
-div#img {
-    text-align: center;    
+img#foto {
+    text-align: center;
+    padding: 10px;
 }
 
 footer {
