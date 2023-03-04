@@ -24,10 +24,10 @@ section {
 
 div#res {
     text-align: center;
-    padding: 5px;
+    padding: 10px;
 }
 
-img#foto {
+div#img {
     text-align: center;
     padding: 10px;
 }

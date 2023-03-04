@@ -11,30 +11,29 @@ function verificar() {
 
     var sex = window.document.getElementsByName('radiosexo')
     var genero = ''
-    var img = document.createElement ('img') //criou o espaço para uma imagem(img)
-    img.setAttribute ('id', 'foto') //atribuiu o id"foto" para img
+    var img = window.document.getElementById('img')
 
     if (sex[0].checked) {
         genero = 'homem'
             if (idade <= 10) {
-                img.setAttribute ('src', 'foto-bebe-f.png')
+                img.innerHTML = "<img src ='../imagens/foto-bebe-m.png'>"
             } else if (idade > 10 && idade <= 20) {
-                img.setAttribute ('src', 'foto-bebe-f.png')
+                img.innerHTML = "<img src ='../imagens/foto-jovem-m.png'>"
             } else if (idade >= 21 && idade < 50) {
-                img.setAttribute ('src', 'foto-bebe-f.png')
+                img.innerHTML = "<img src = '../imagens/foto-adulto-m.png'>"
             } else if (idade >= 50) {
-                img.setAttribute ('src', 'foto-bebe-f.png')
+                img.innerHTML = "<img src = '../imagens/foto-idoso-m.png'>"
             }
     } else if (sex[1].checked) {
         genero = 'mulher'
         if (idade <= 10) {
-            img.setAttribute('src', 'foto-bebe-f.png')
+            img.innerHTML = "<img src = '../imagens/foto-bebe-f.png'>"
         } else if (idade > 10 && idade <= 20) {
-            img.setAttribute ('src', 'foto-bebe-f.png')
+            img.innerHTML = "<img src = '../imagens/foto-jovem-f.png'>"
         } else if (idade >= 21 && idade < 50) {
-            img.setAttribute ('src', 'foto-bebe-f.png')
+            img.innerHTML = "<img src = '../imagens/foto-adulto-f.png'>"
         } else if (idade >= 50) {
-            img.setAttribute ('src', 'foto-bebe-f.png')
+            img.innerHTML = "<img src = '../imagens/idoso-f.png'>"
         }
     }
 
